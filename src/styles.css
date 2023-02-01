@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-.app-root{
-  background-color: #edfaf8 ;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  border:0;
+  font-family: 'Source Code Pro', monospace;
 }
-
-
- /* SLATE GRAY #708090 */
-  /* CADET BLUE #5F9EA0 */

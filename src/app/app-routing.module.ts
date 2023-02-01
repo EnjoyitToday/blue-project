@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './errors/not-found/not-found.component';
-import { PhotoFormComponent } from './photos/photo-form/photo-form.component';
-import { PhotoListComponent } from './photos/photo-list/photo-list.component';
+import { AboutComponent } from './about/about.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
-  {path:'user/:userName',component: PhotoListComponent},
-  {path:'user/caue',component: PhotoFormComponent},
-  {path:'**',component: NotFoundComponent},
+  {
+    path:'',
+    redirectTo:'about',
+    pathMatch:'full'
+  },
+  {path:'about',component: AboutComponent},
+  {path:'experiencies',component: ExperiencesComponent},
+  {path:'skills',component: SkillsComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,28 @@
+<div class="side-bar-style">
+
+  <bp-photos styling="w-75 h-25 m-4 rounded" imgUrl="/assets/banana.png"></bp-photos>
+
+  <p class="ml-3 titulo-name">{{ name }}</p>
+  <mat-divider class="divider"></mat-divider>
+
+  <div class="buttons">
+    <button mat-raised-button class="button" color="accent" routerLink="/about">About</button>
+    <button mat-raised-button class="button" color="accent" routerLink="/skills">Skills</button>
+    <button mat-raised-button class="button" color="accent" routerLink="/experiencies" >Experiencies</button>
+    <button mat-raised-button class="button" color="accent" routerLink="about" >Info</button>
+  </div>
+
+  <mat-divider class="divider"></mat-divider>
+
+  <div>
+    <p class="titulo-social">Social:</p>
+
+    <ul>
+      <div styling="w-25 h-25 rounded m-1" *ngFor="let item of socialMedia">
+        <li>
+          <bp-photo-link [linkAdress]="item.adress" styling="w-25 h-25 rounded m-1" [imgUrl]="item.imgAssets"></bp-photo-link>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>
